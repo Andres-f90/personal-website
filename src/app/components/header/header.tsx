@@ -19,7 +19,9 @@ export default () => {
       <nav className="bg-white w-full border-b md:border-0 md:static">
           <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                <Link href='/'>
                     Andres F. Cifuentes
+                </Link>
                   <div className="md:hidden">
                       <button className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
                           onClick={() => setState(!state)}
@@ -54,7 +56,7 @@ export default () => {
                   </ul>
               </div>
               <div className="hidden md:inline-block">
-                <Link href="javascript:void(0)" className="py-3 px-4 text-white bg-indigo-600 hover:bg-indigo-700 rounded-md shadow">
+                <Link href="/contact" className="py-3 px-4 text-white bg-indigo-600 hover:bg-indigo-700 rounded-md shadow">
                     Contact Me
                 </Link>
               </div>
