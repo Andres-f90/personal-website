@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 
-export default () => {
+const Header = () => {
 
   const [state, setState] = useState(false)
 
@@ -64,3 +64,5 @@ export default () => {
       </nav>
   )
 }
+
+export default Header
