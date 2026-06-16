@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  /* ===== Skills section (About page) ===== */
+  .skills-section { @apply max-w-screen-lg mx-auto px-4 py-12; }
+  .skills-title   { @apply text-2xl font-bold text-gray-800 mb-6; }
+  .skills-list    { @apply space-y-3; }
+  .skill-row      { @apply flex items-center justify-between max-w-md; }
+  .skill-name     { @apply text-gray-700; }
+
+  .stars        { @apply relative inline-block text-xl leading-none; }
+  .stars-empty  { @apply text-gray-300; }
+  .stars-filled { @apply absolute top-0 left-0 overflow-hidden whitespace-nowrap text-yellow-400; }
+}
